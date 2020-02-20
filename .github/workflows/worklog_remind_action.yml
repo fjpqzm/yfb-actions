@@ -1,0 +1,17 @@
+name: Work Log Remind Action
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: WeChat Work notification by text
+      uses: chf007/action-wechat-work@master
+      env:
+        WECHAT_WORK_BOT_WEBHOOK: ${{secrets.YFB_MSG_BOT_KEY}}
+      with:
+        msgtype: text
+        content: 请
+        mentioned_list: '["@all"]'
