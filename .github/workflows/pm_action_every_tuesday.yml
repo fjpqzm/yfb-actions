@@ -1,8 +1,9 @@
 name: 每周二项目经理提醒
 
-on:
-  schedule:
-    - cron: '0 9,10,11 * * 2'
+on: push
+#on:
+#  schedule:
+#    - cron: '0 9,10,11 * * 2'
 
 jobs:
   build:
@@ -15,6 +16,6 @@ jobs:
         WECHAT_WORK_BOT_WEBHOOK: ${{secrets.YFB_PM_REMIND_BOT_KEY}}
       with:
         msgtype: text
-        content: 请各项目经理及时审核日报，并提交项目周报。
+        content: 每周二项目经理提醒：请各项目经理及时审核上周日报，并提交上周的项目周报。
 
 

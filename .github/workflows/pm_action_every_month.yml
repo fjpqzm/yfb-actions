@@ -15,6 +15,6 @@ jobs:
         WECHAT_WORK_BOT_WEBHOOK: ${{secrets.YFB_PM_REMIND_BOT_KEY}}
       with:
         msgtype: text
-        content: 请各项目经理及时审核日报，并提交上月的项目周报。
+        content: 每月3号项目经理提醒：请各项目经理及时审核上月日报，并提交上月的项目周报。
 
 

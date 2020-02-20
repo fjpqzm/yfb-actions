@@ -1,8 +1,9 @@
 name: 周例会提醒
 
-on:
-  schedule:
-    - cron: '0 9,10,11 * * 3'
+on: push
+#on:
+#  schedule:
+#    - cron: '0 9,10,11 * * 3'
 
 jobs:
   build:
@@ -15,6 +16,6 @@ jobs:
         WECHAT_WORK_BOT_WEBHOOK: ${{secrets.YFB_WEEKLY_MEETING_REMIND_BOT_KEY}}
       with:
         msgtype: text
-        content: 请及时到 Confluence 上填写部门例会材料。
+        content: 每周三例会提醒：请及时到 Confluence 上更新周例会材料，若有事请假请安排好人员参加。
 
 

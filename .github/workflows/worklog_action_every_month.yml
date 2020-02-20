@@ -1,8 +1,9 @@
-name: 每月一号日报填写提醒
+name: 每月1号日报填写提醒
 
-on:
-  schedule:
-    - cron: '0 9,10,11 1 * *'
+on: push
+#on:
+#  schedule:
+#    - cron: '0 9,10,11 1 * *'
 
 jobs:
   build:
@@ -15,5 +16,5 @@ jobs:
         WECHAT_WORK_BOT_WEBHOOK: ${{secrets.YFB_WORKLOG_REMIND_BOT_KEY}}
       with:
         msgtype: text
-        content: 请及时填写上月日报。
+        content: 每月1号日报填写提醒：请大家及时填写上月的工作日报。
 
