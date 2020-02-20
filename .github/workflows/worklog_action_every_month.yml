@@ -1,9 +1,9 @@
 name: 每月1号日报填写提醒
 
-on: push
-#on:
-#  schedule:
-#    - cron: '0 9,10,11 1 * *'
+#on: push
+on:
+  schedule:
+    - cron: '0 9,10,11 1 * *'
 
 jobs:
   build:

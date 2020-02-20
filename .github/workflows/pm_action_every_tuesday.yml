@@ -1,9 +1,9 @@
 name: 每周二项目经理提醒
 
-on: push
-#on:
-#  schedule:
-#    - cron: '0 9,10,11 * * 2'
+#on: push
+on:
+  schedule:
+    - cron: '0 9,10,11 * * 2'
 
 jobs:
   build:
