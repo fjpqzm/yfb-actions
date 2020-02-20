@@ -13,5 +13,5 @@ jobs:
         WECHAT_WORK_BOT_WEBHOOK: ${{secrets.YFB_MSG_BOT_KEY}}
       with:
         msgtype: text
-        content: 请
-        mentioned_list: '["@all"]'
+        content: 请按时填写工作日报。
+
