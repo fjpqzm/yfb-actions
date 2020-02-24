@@ -1,9 +1,9 @@
 name: 项目签到提醒
 
-on: push
-#on:
-#  schedule:
-#    - cron: '30/40/50 8 * * 1-5'
+#on: push
+on:
+  schedule:
+    - cron: '10/30/50 8 * * 1-5'
 
 jobs:
   build:
