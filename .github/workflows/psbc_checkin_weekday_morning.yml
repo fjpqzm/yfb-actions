@@ -1,0 +1,21 @@
+name: 项目上午打卡提醒
+
+#on: push
+on:
+  schedule:
+    - cron: '30/40/50 8 * * 1-5'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: WeChat Work notification by text
+      uses: chf007/action-wechat-work@master
+      env:
+        WECHAT_WORK_BOT_WEBHOOK: ${{secrets.PSBC_CHECKIN_REMIND_BOT_KEY}}
+      with:
+        msgtype: text
+        content: 上午打卡提醒：请遵从项目管理组要求，每天按时打开。在每天9点前，打卡签到。打卡选择班次： C： 9:00 ~ 18:00。
+
+
