@@ -3,7 +3,7 @@ name: 每月3号项目经理提醒
 #on: push
 on:
   schedule:
-    - cron: '0 9,10,11 3 * *'
+    - cron: '0 1,2,3 3 * *'
 
 jobs:
   build:

@@ -3,7 +3,7 @@ name: 项目签退提醒
 #on: push
 on:
   schedule:
-    - cron: '30 18-20 * * 1-5'
+    - cron: '30 10-12 * * 1-5'
 
 jobs:
   build:
