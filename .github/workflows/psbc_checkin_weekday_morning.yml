@@ -3,7 +3,7 @@ name: 项目签到提醒
 #on: push
 on:
   schedule:
-    - cron: '0,10,20 0 * * 1-5'
+    - cron: '30,50 23 * * 1-5'
 jobs:
   build:
     runs-on: ubuntu-latest
